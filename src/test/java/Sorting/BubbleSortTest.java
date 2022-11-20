@@ -17,5 +17,6 @@ public class BubbleSortTest {
         ArrayList<Integer> exp2 = new ArrayList<Integer>(Arrays.asList(1,2,3,6));
         ArrayList<Integer> act2 = new ArrayList<Integer>(Arrays.asList(1,2,6,3));
         assertArrayEquals(exp2.toArray(), bs.BubbleSort(act2).toArray());
+
     }
 }

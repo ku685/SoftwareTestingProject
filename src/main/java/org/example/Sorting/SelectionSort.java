@@ -29,6 +29,5 @@ public class SelectionSort {
         System.out.println();
 
         return arr;
-
     }
 }
