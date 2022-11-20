@@ -6,7 +6,6 @@ public class InsertionSort {
 
     public ArrayList<Integer> InsertionSort(ArrayList<Integer> arr){
         int n = arr.size();
-
         for(int i=1; i<n; i++){
             int k = arr.get(i);
             int j = i-1;
