@@ -3,6 +3,7 @@ package org.example.Sorting;
 import java.util.ArrayList;
 
 public class InsertionSort {
+
     public ArrayList<Integer> InsertionSort(ArrayList<Integer> arr){
         int n = arr.size();
 
@@ -22,5 +23,6 @@ public class InsertionSort {
             System.out.print(arr.get(i)+" ");
         System.out.println();
         return arr;
+
     }
 }

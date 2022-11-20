@@ -3,6 +3,7 @@ package org.example.Sorting;
 import java.util.ArrayList;
 
 public class BubbleSort {
+
     public ArrayList<Integer> BubbleSort(ArrayList <Integer> arr)
     {
         int n = arr.size();
@@ -19,5 +20,6 @@ public class BubbleSort {
             System.out.print(arr.get(i)+" ");
         System.out.println();
         return arr;
+
     }
 }
