@@ -10,6 +10,7 @@ public class CountingSort {
         for(int i=0; i<n; i++){
             t_array[i] = arr.get(i);
         }
+
         // We will first find largest element of the array
 
         int[] op_array = new int[n+1];
@@ -59,64 +60,3 @@ public class CountingSort {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    int max_ele = arr.get(0);
-//        for(int i=1;i<n; i++){
-//        if(arr.get(i)>max_ele){
-//        max_ele = arr.get(i);
-//        }
-//        }
-//
-//        ArrayList<Integer> cnt_array = new ArrayList<Integer>(max_ele+1);
-//
-//        ArrayList<Integer> op_array = new ArrayList<Integer>(max_ele+1);
-//        //Initialize count array with value 0
-//
-//        for(int i=0;i<max_ele+1;i++) {
-//        cnt_array.add(0);
-//        op_array.add(0);
-//        }
-//        //Store count of each element
-//
-//        for(int i=0; i<n; i++){
-//        //System.out.println(i);
-//        cnt_array.set(arr.get(i),cnt_array.get(arr.get(i))+1);
-//        }
-//
-//        //System.out.println("OK1");
-//        //find cummulative sum
-//
-//        for(int i=1; i<=max_ele; i++){
-//        cnt_array.set(i,cnt_array.get(i-1)+cnt_array.get(i));
-//        }
-//
-//        //System.out.println("OK2");
-//        for(int i=n-1;i>=0;i--){
-//        op_array.set(cnt_array.get(arr.get(i)-1),arr.get(i));
-//        cnt_array.set(arr.get(i),cnt_array.get(arr.get(i))-1);
-//        }
-//
-//        //System.out.println("OK3");
-//        //copy sorted array
-//        for(int i=0; i<n; i++){
-//        arr.set(i,op_array.get(i));
-//        }
-//
-//        for (int i=0; i<n; ++i)
-//        System.out.print(arr.get(i)+" ");
-//        System.out.println();
-//        return arr;
-//        }
