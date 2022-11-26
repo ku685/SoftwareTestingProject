@@ -14,15 +14,26 @@ public class LinearSearchTest {
 
         //case 1
         //control flow while inside loop found and return 1;
-        ArrayList<Integer> exp1 = new ArrayList<Integer>(
-                Arrays.asList(87, 65, 74, 4));
+
+        ArrayList<Integer> exp1 = new ArrayList<Integer>(Arrays.asList());
         int key = 65;
-        assertEquals(1, lc.linearSearch(exp1,key));
-        //control flow goes inside if not found comes out then exit code with -1;
-        ArrayList<Integer> exp3 = new ArrayList<Integer>(
-                Arrays.asList(87, 65, 74, 4,45,67,89,90,12,3,4));
-                int key2 =990;
-                assertEquals(-1,lc.linearSearch(exp3,key2));
+        //edge 1-5
+        //path 1-5
+        assertEquals(-1, lc.linearSearch(exp1,key));
+                ArrayList<Integer> exp3 = new ArrayList<Integer>(Arrays.asList(87, 65, 74, 4,45,67,89,90,12,3,4));
+                int key2 =87;
+
+                //edge 1-2-3
+        //path 1-2-3
+                assertEquals(0,lc.linearSearch(exp3,key2));
+        ArrayList<Integer> exp4 =new ArrayList<>(Arrays.asList(1,2));
+        int key4 =3;
+
+        //edge 1-2-4
+        //path 1-2-4-2-4-5
+        assertEquals(-1,lc.linearSearch(exp4,key4));
+
+
 
     }
 }

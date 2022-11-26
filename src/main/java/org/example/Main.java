@@ -16,9 +16,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your choice");
         int choice=sc.nextInt();
-        while(choice!=4) {
+        while(choice!=6)
+        {
+            System.out.println("Enter your choice");
+            System.out.println("1.linear search");
+            System.out.println("2.Binary serach");
+            System.out.println("3.Jump Seach");
+            System.out.println("4.lower bound of element");
+            System.out.println("5.Upper bound of elemenbt");
+            System.out.println("6.exit ");
             switch (choice)
             {
+
                 case  1:
                     System.out.println("Enter the key for searching using linearsearch");
                     int key=sc.nextInt();
@@ -26,7 +35,8 @@ public class Main {
                     int n = sc.nextInt();
                     System.out.println("Enter the Aray for searching");
                     ArrayList<Integer> array = new ArrayList<Integer>(n);
-                    for (int i = 0; i < n; i++) {
+                    for (int i = 0; i < n; i++)
+                    {
                         int ele = sc.nextInt();
                         array.add(ele);
                     }
@@ -39,7 +49,8 @@ public class Main {
                     int n1= sc.nextInt();
                     System.out.println("Enter the Aray for searching");
                     ArrayList<Integer> array1 = new ArrayList<Integer>(n1);
-                    for (int i = 0; i < n1; i++) {
+                    for (int i = 0; i < n1; i++)
+                    {
                         int ele = sc.nextInt();
                         array1.add(ele);
                     }
@@ -52,7 +63,8 @@ public class Main {
                     int n3= sc.nextInt();
                     System.out.println("Enter the Aray for searching");
                     ArrayList<Integer> array3 = new ArrayList<Integer>(n3);
-                    for (int i = 0; i < n3; i++) {
+                    for (int i = 0; i < n3; i++)
+                    {
                         int ele = sc.nextInt();
                         array3.add(ele);
                     }
@@ -65,11 +77,25 @@ public class Main {
                     int n4= sc.nextInt();
                     System.out.println("Enter the Aray for searching");
                     ArrayList<Integer> array4 = new ArrayList<Integer>(n4);
-                    for (int i = 0; i < n4; i++) {
+                    for (int i = 0; i < n4; i++)
+                    {
                         int ele = sc.nextInt();
                         array4.add(ele);
                     }
                     Lowerbound.lowerbound(array4,key4);
+                case  5:
+                    System.out.println("Enter the element whose upper bound you want");
+                    int key5=sc.nextInt();
+                    System.out.println("Enter the Size of the array");
+                    int n5= sc.nextInt();
+                    System.out.println("Enter the Aray for searching");
+                    ArrayList<Integer> array5 = new ArrayList<Integer>(n5);
+                    for (int i = 0; i < n5; i++)
+                    {
+                        int ele = sc.nextInt();
+                        array5.add(ele);
+                    }
+                    Lowerbound.lowerbound(array5,key5);
                 default:break;
 
 

@@ -21,6 +21,7 @@ public class JumpSearch {
             step += (int)Math.floor(Math.sqrt(n));
             if (prev >= n)
                 return -1;
+
         }
 
         // Doing a linear search for x in block
