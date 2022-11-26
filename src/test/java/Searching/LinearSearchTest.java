@@ -1,3 +1,5 @@
+package Searching;
+
 import org.example.searching.LinearSearching;
 
 import org.junit.Test;
@@ -5,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-public class SearchingTest {
+public class LinearSearchTest {
     @Test
     public void linearsearch() {
         LinearSearching lc = new LinearSearching();
