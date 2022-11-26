@@ -7,7 +7,7 @@ public class LinearSearching {
         for (int i = 0; i < arr.size(); i++) {
             if (arr.get(i) == key) {
                 System.out.println("Element found");
-                return 1;
+                return i;
             }
         }
         System.out.println("Element not found");
